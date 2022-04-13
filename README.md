@@ -1,6 +1,6 @@
 # 👽 MUTANT VALIDATOR
 
-[![codecov](https://codecov.io/gh/4b4k3r/bwl-mutant-test/branch/main/graph/badge.svg?token=nrmup5hj6W)](https://codecov.io/gh/4b4k3r/bwl-mutant-test)
+[![codecov](https://codecov.io/gh/4b4k3r/bwl-mutant-test/branch/master/graph/badge.svg?token=nrmup5hj6W)](https://codecov.io/gh/4b4k3r/bwl-mutant-test)
 
 Este servicio tiene como objetivo analizar secuencias de ADN en busqueda de la segregacion de mutantes y no mutantes.
 
