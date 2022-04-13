@@ -1,6 +1,6 @@
 # 👽 MUTANT VALIDATOR
 
-[![codecov](https://codecov.io/gh/4b4k3r/meli-test-java/branch/master/graph/badge.svg?token=WGTQ9UVZ2U)](https://codecov.io/gh/4b4k3r/bwl-mutant-test)
+[![codecov](https://codecov.io/gh/4b4k3r/bwl-mutant-test/branch/main/graph/badge.svg?token=nrmup5hj6W)](https://codecov.io/gh/4b4k3r/bwl-mutant-test)
 
 Este servicio tiene como objetivo analizar secuencias de ADN en busqueda de la segregacion de mutantes y no mutantes.
 
@@ -23,7 +23,7 @@ y se recalcula el radio de mutantes sobre los no mutantes.
 
 - Java 8
 - Redis 6.X
-
+  d71be29b-cff4-4c0a-9ad5-663d331a08fd
 ### 🔨 Compilacion
 
 - Java 8
