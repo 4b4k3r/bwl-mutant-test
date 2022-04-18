@@ -41,15 +41,15 @@ el archivo con nombre `genetic-analysis-x.x.x.x.jar` el cual sera nuestro ejecut
 
 El componente requiere de las siguiente VM Option al momento de ejecutar el componente:
 
-|VM Option               | Valor                         | Descripcion                             |
-|------------------------|-------------------------------|-----------------------------------------|
-|`spring.config.location`|./config/application.properties|Ruta del archivo de propiedades de spring|
+|VM Option               | Valor                        | Descripcion                             |
+|------------------------|------------------------------|-----------------------------------------|
+|`spring.config.location`|./application.properties|Ruta del archivo de propiedades de spring|
 
 Se recomienda el uso de un script (`ShellScript`) para indicar el comando a ejecutar para iniciar la ejecucion
 como un servicio, su estructura recomendada es la siguiente :
 
 ```Shell Script
-java -Dspring.config.location=./config/application.properties -jar mutant-validator-0.0.1.jar > log/terminal.log &
+java -Dspring.config.location=./application.properties -jar mutant-validator-0.0.1.jar > log/terminal.log &
 ```
 
 En donde :
@@ -79,11 +79,7 @@ solamente sera necesario ejecutar el siguiente comando en el directorio raiz del
 
 `gcloud app deploy`
 
-[Es posible acceder a la vista de swagger del servicio](todo)
-
-### 📄 Documentation
-
-[JavaDocs documentation is avaliable](todo)
+[Es posible acceder a la vista de swagger del servicio](http://bel-mutant.uc.r.appspot.com/swagger-ui/index.html)
 
 ### 📍 Endpoint
 
@@ -129,6 +125,12 @@ la ruta raiz del directorio del proyecto :
 > **NOTA**: La documentacion de la cobertura se almacena en el directorio `target/site/jacoco/` en la ruta raiz del proyecto
 
 ### 🎉 Changelog
+- 1.0.0.1
+  - Correccion de bugs
+    - La version de jedis es incompatible con la version de spring
+    - la inicializacion de redis es incompartible con la inicializacion por bean con jedis factory
+  - Se agregan archivos de configuracion para despliegue en app engine de gcp
+  - Se permite inicializar el componente con configuracion de properties file y de env variables
 - 1.0.0.0
   - Version base con :
     - Web service rest (revisar el apartado `Endpoint`)

@@ -1,0 +1,11 @@
+runtime: java11
+env: standard
+env_variables:
+  SPRING_REDIS_HOST: "35.223.188.221"
+  SPRING_REDIS_PORT: "6379"
+instance_class: F1
+handlers:
+  - url: .*
+    script: auto
+network: {}
+service_account: bel-mutant@appspot.gserviceaccount.com
